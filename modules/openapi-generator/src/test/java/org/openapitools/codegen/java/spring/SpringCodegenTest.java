@@ -2583,8 +2583,7 @@ public class SpringCodegenTest {
         generator.setGeneratorPropertyDefault(CodegenConstants.MODELS, "true");
         generator.setGeneratorPropertyDefault(CodegenConstants.SUPPORTING_FILES, "false");
 
-        List<File> generate = generator.opts(input).generate();
-        System.out.println(generate);
+        generator.opts(input).generate();
     }
 
 }
